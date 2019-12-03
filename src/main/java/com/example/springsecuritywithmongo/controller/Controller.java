@@ -34,7 +34,7 @@ public class Controller {
     private UserDetailsService userDetailsService;
 
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String home() {
         return ("<h1>Welcome</h1>");
     }
