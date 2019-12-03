@@ -56,7 +56,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests().antMatchers("/authenticate").permitAll()
                 .mvcMatchers("/admin").hasAuthority("ADMIN")
                 .antMatchers("/admin").hasRole("ADMIN")
-                .antMatchers("/user").hasAuthority("staff").//not working because there is no staff in it
+                .antMatchers("/user").hasAuthority("staff").
                 anyRequest().authenticated().and().
                 exceptionHandling().and()
                 .sessionManagement()
